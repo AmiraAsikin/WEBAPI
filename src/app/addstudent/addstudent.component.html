@@ -1,0 +1,57 @@
+
+<form [formGroup]="addStudent" (ngSubmit)="createStudent()">
+    <!-- <form> -->
+  <div class="container">
+      <h1>ADD STUDENT</h1>
+      <p>PLEASE FILL IN THIS FORM TO REGISTER FOR CLUB</p>
+      <hr>
+      
+      <label for="name"><b>STUDENT NAME</b></label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Enter Name" name="name">
+  
+      <label for="course"><b>COURSE</b></label>
+      <!-- <input type="text" class="form-control" formControlName="course" placeholder="Enter Course" name="course"> -->
+      <select class="form-select" name="course" type="text" formControlName="course">
+        <!-- <option>Select Course</option> -->
+        <option>CT203</option>
+        <option>CT204</option>
+        <option>CT206</option>
+      </select>
+      <br>
+
+      <label for="semester"><b>SEMESTER</b></label>
+      <!-- <input type="text" class="form-control" formControlName="semester" placeholder="Enter Semester" name="semester"> -->
+      <select class="form-select" name="semester" type="text" formControlName="semester">
+        <!-- <option>Select Semester</option> -->
+        <option> 1</option>
+        <option> 2</option>
+        <option> 3</option>
+        <option> 4</option>
+        <option> 5</option>
+        <option> 6</option>
+        <option> 7</option>
+        <option> 8</option>
+        <option> 9</option>
+      </select>
+      <br>
+      <label for="email"><b>EMAIL</b></label>
+      <input type="text" class="form-control" formControlName="email" placeholder="name@example.com" name="email">
+
+      <label for="clubId"><b>CLUB ID</b></label>
+      <!-- <input type="text" class="form-control" formControlName="clubId" placeholder="Enter Club ID" name="clubId"> -->
+      <select class="form-select" name="clubId" type="number" formControlName="clubId">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <br>
+      <button type="submit" class="registerbtn" href="list">Add Student</button>
+
+      <hr>
+      
+    </div>
+  </form>
+
+  
